@@ -1,0 +1,5 @@
+- hosts: k8s
+  become: yes
+  tasks:
+    - name: Deploy app to Kubernetes
+      command: kubectl apply -f k8s/deployment.yaml
